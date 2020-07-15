@@ -68,46 +68,55 @@
             <b-container fluid="xl">
                 <b-row>
                     <b-col>
-                        <h3>Quick Start</h3>
-                        
-                        <ol type="1">
-                            <li>Buy Minecraft: <b-link href="https://www.minecraft.net/en-us/get-minecraft">https://www.minecraft.net/en-us/get-minecraft</b-link></li>
-                            <li>Install Technic Launcher: <b-link href="https://www.technicpack.net/download">https://www.technicpack.net/download</b-link></li>
-                            <li>Install Fantastic Future modpack: <b-link href="https://www.technicpack.net/modpack/official-fantasticfuture.1613688">https://www.technicpack.net/modpack/official-fantasticfuture.1613688</b-link></li>
-                            <li>Start the modpack, and connect to the server: <code>fantasticfuture.net</code></li>
-                            <li>Check out our guides and get crafting: <b-link to="/guides">http://fantasticfuture.net/#/guides</b-link></li>
-                    
-                        </ol>
-                        <b-alert show> If you have any questions, join the discord to ask for help getting started: <b-link href="https://discord.gg/Ku9UkX4">https://discord.gg/Ku9UkX4</b-link></b-alert></br>
+                        <h3>Upload</h3>
                     </b-col>
                 </b-row>
                 <b-row>
                     <b-col>
-                        <h3>Culture</h3>
-                        <ul>
-                            <li>Cooperate, respect each other, and act with maturity.</li>
-                            <li>Clean up your own messes and leave peaceful places better than the way you found it.</li>
-                            <li>Don't be a jerk.</li>
-                        </ul>
-                    </b-col>
-                </b-row>
-                <b-row>
-                    <b-col>
-                        <h3>Rules</h3>
-                        <ol type="1">
-                            <li>Profanity allowed, with maturity</li>
-                            <li>Zero tolerance for slurs.</li>
-                            <li>No racism.</li>
-                            <li>No transphobia.</li>
-                            <li>No homophobia.</li>
-                            <li>No sexism.</li>
-                            <li>No hatred of religious groups.</li>
-                            <li>No hatred of foriegners.</li>
-                            <li>No dog-whistles.</li>
-                            <li>Respect property and signs - no stealing.</li>
-                            <li>No needless destruction.</li>
-                            <li>No PVP, except in designated areas.</li>
-                            <li>No hacking, cheating, or greifing.</li>
+                        <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+                            <b-form-group
+                                id="input-group-1"
+                                label="Email address:"
+                                label-for="input-1"
+                                description="We'll never share your email with anyone else."
+                            >
+                                <b-form-input
+                                id="input-1"
+                                v-model="form.email"
+                                type="email"
+                                required
+                                placeholder="Enter email"
+                                ></b-form-input>
+                            </b-form-group>
+
+                            <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
+                                <b-form-input
+                                id="input-2"
+                                v-model="form.name"
+                                required
+                                placeholder="Enter name"
+                                ></b-form-input>
+                            </b-form-group>
+
+                            <b-form-group id="input-group-3" label="Food:" label-for="input-3">
+                                <b-form-select
+                                id="input-3"
+                                v-model="form.food"
+                                :options="foods"
+                                required
+                                ></b-form-select>
+                            </b-form-group>
+
+                            <b-form-group id="input-group-4">
+                                <b-form-checkbox-group v-model="form.checked" id="checkboxes-4">
+                                <b-form-checkbox value="me">Check me out</b-form-checkbox>
+                                <b-form-checkbox value="that">Check that out</b-form-checkbox>
+                                </b-form-checkbox-group>
+                            </b-form-group>
+
+                            <b-button type="submit" variant="primary">Submit</b-button>
+                            <b-button type="reset" variant="danger">Reset</b-button>
+                        </b-form>
                     </b-col>
                 </b-row>
             </b-container>
