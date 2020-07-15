@@ -70,6 +70,7 @@
                     <b-col>
                         <h3>Upload</h3>
                         <textarea v-model="code" placeholder="write your code here"></textarea>
+                        <button v-on:click="upload">Upload bot</button>
                     </b-col>
                 </b-row>
             </b-container>
@@ -78,130 +79,6 @@
             <b-container fluid="xl">
                 <b-row>
                     <b-col>
-                        Note, this section is out of date. We are trialing some new mods.
-                        
-                        <h3>World Generation</h3>
-                        The world is littered with old abandoned cities from a lost era, dungeons filled with monsters and loot, graveyards and ruins with burried treasure, dragons guarding their treasure, and caves unlike any you have ever seen in vanillia minecraft.</br>
-                        
-                        <ol type="1">
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/tektopia">tektopia-1.1.0.jar</b-link> (and <b-link href="https://www.curseforge.com/minecraft/mc-mods/tektopia-harvestcraft-compat">Tektopia-Harvestcraft-Compat-1.3.jar</b-link>)</li>
-                            <li><b-link href="https://biomesoplenty.fandom.com/wiki/Biomes_List">BiomesOPlenty-1.12.2-7.0.1.2441-universal.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/the-lost-cities/screenshots">lostcities-1.12-2.0.21.jar</b-link>(and <b-link href="https://www.curseforge.com/minecraft/mc-mods/lost-souls">lostsouls-1.12-1.1.4.jar</b-link>)</li>
-                            <li><b-link href="https://ice-and-fire-mod.fandom.com/wiki/Structures">iceandfire-1.8.3.jar</b-link></li>
-                            <li><b-link href="http://www.9minecraft.net/roguelike-dungeons-mod/">RoguelikeDungeons-1.12.2-1.8.0.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/dungeon-tactics">DungeonTactics-1.12.2-0.16.6.jar</b-link></li>
-                            <li><b-link href="https://imgur.com/a/oQnb1">RecurrentComplex-1.4.8.1.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/treasure2">Treasure2-mc1.12.2-f14.23.5.2768-v1.9.0.jar</b-link></li>
-                            <li><b-link href="https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/2346379-streams-real-flowing-rivers">Streams-1.12-0.4.8.jar</b-link></li>
-                            <li><b-link href="https://quark.vazkii.net/#features">Quark-r1.6-177.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/worleys-caves">worleycaves-1.5.1.jar</b-link></li>
-                        </ol>
-                    </b-col>
-                </b-row>
-                <b-row>
-                    <b-col>
-                        <h3>Travel</h3>
-                        Instead of using <code>/tp</code> or <code>/tpa</code>, FantasticFuture is more in favor of in-game means of transportation. Fast traveling breaks immersion. We make an exception for <code>/home</code>.</br>
-
-                        <ol type="1">
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/quickhomes">QuickHomes-1.2.2.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/travel-huts">travelhut-3.0.2.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/dimensionaldoors">DimensionalDoors-3.0.9-287.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/teletoro">teletoro-1.12.2-26.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/waypoints">waypoints-1.12-1.2.4.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/chococraft">chococraft_1.12.1-0.9.1.52.jar</b-link></li>
-                        </ol>
-                    </b-col>
-                </b-row>
-                <b-row>
-                    <b-col>
-                        <h3>Nature and Fantasy</h3>
-
-                        <ol type="1">
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/Thaumcraft">Thaumcraft-1.12.2-6.1.BETA26.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/electroblobs-wizardry">ElectroblobsWizardry-4.2.7-MC1.12.2.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/pams-harvestcraft">Pam's+HarvestCraft+1.12.2zf.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/enchanting-plus">EnchantingPlus-1.12.2-5.0.176.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest">twilightforest-1.12.2-3.10.1013-universal.jar</b-link></li>
-                        </ol>
-                    </b-col>
-                </b-row>
-                <b-row>
-                    <b-col>
-                        <h3>Technology</h3>
-                        Technology in this modpack is almost exclusively powered by Redstone Flux.</br>
-
-                        <ol type="1">
-                            <li><b-link href="http://teamcofh.com/docs/1.12/thermal-dynamics/">ThermalDynamics-1.12.2-2.5.5.21-universal.jar</b-link></li>
-                            <li><b-link href="http://teamcofh.com/docs/1.12/thermal-expansion/">ThermalExpansion-1.12.2-5.5.4.43-universal.jar</b-link></li>
-                            <li><b-link href="http://teamcofh.com/docs/1.12/thermal-foundation/">ThermalFoundation-1.12.2-2.6.3.27-universal.jar</b-link></li>
-                            <li><b-link href="http://teamcofh.com/docs/1.12/redstone-arsenal/">RedstoneArsenal-1.12.2-2.6.3.18-universal.jar</b-link></li>
-                            <li><b-link href="https://github.com/McJtyMods/RFTools/wiki">rftools-1.12-7.73.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/extreme-reactors">ExtremeReactors-1.12.2-0.4.5.67.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/railcraft">railcraft-12.0.0.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/simply-jetpacks-2">SimplyJetpacks2-1.12.2-2.2.12.65.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/rope-bridge">ropebridge-1.12-2.0.7.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/computercraft">ComputerCraft1.80pr1.jar</b-link></li>
-                        </ol>
-                    </b-col>
-                </b-row>
-                <b-row>
-                    <b-col>
-                        <h3>Storage enhancements</h3>
-                        <ol type="1">
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/sophisticated-wolves">SophisticatedWolves-1.12.2-3.13.8.jar</b-link></li>
-                            <li><b-link href="http://www.9minecraft.net/wolf-armor-storage-mod/">wolfarmor-1.12.2-2.2.3.1798-universal.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/iron-chests">ironchest-1.12.2-7.0.72.847.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/bibliocraft">BiblioCraft-Mod-1.12.2.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/forge-backpacks">Backpacks-Mod-1.12.2.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/ender-storage">EnderStorage-1.12.2-2.4.6.137-universal.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/inventory-pets">inventorypets-1.12-2.0.4.jar</b-link></li>
-                        </ol>
-                    </b-col>
-                </b-row>
-                <b-row>
-                    <b-col>
-                        <h3>Gameplay enhancements</h3>
-                        <ol type="1">
-                            <li><b-link href="https://github.com/Glitchfiend/SereneSeasons/wiki">SereneSeasons-1.12.2-1.2.18-universal.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/gravestone-mod">gravestone-1.10.1.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/carry-on">CarryOn+MC1.12.2+v1.12.3.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/zombie-awareness">zombieawareness-1.12.1-1.11.16.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/sleepingoverhaul">SleepingOverhaul-1.12.2-1.0.0.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/mo-villages">[1.12]MoVillages-1.5.4.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/dynamic-lights">DynamicLights-1.12.2.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/treecapitator-updated">TreeCapitator-Mod-1.12.2.jar</b-link></li>
-                            <li><b-link href="https://www.curseforge.com/minecraft/mc-mods/itemphysic">ItemPhysic_Full_1.4.28_mc1.12.2.jar</b-link></li>
-                        </ol>
-                    </b-col>
-                </b-row>
-                <b-row>
-                    <b-col>
-                        <h3>Admin/Core libraries</h3>
-                        <ol type="1">
-                            <li>RedstoneFlux-1.12-2.1.0.6-universal.jar</li>
-                            <li>launchdarklypermissionmanager-1.0.0.jar</li>
-                            <li>TickrateChanger-1.0.14.jar</li>
-                            <li>AutoRegLib-1.3-32.jar</li>
-                            <li>Baubles-1.12-1.5.2.jar</li>
-                            <li>Bookshelf-1.12.2-2.3.585.jar</li>
-                            <li>BspkrsCore-1.12.2.jar</li>
-                            <li>chunkgen-1.12-1.5.0.jar</li>
-                            <li>CodeChickenLib-1.12.2-3.2.3.358-universal.jar</li>
-                            <li>CoFHCore-1.12.2-4.6.3.27-universal.jar</li>
-                            <li>CoFHWorld-1.12.2-1.3.1.7-universal.jar</li>
-                            <li>coroutil-1.12.1-1.2.36.jar</li>
-                            <li>CosmicLib-1.12.2-0.4.0.BETA.jar</li>
-                            <li>CreativeCore_v1.9.90_mc1.12.2.jar</li>
-                            <li>Farseek-1.12-2.4.jar</li>
-                            <li>GottschCore-mc1.12.2-f14.23.5.2768-v1.11.0.jar</li>
-                            <li>IvToolkit-1.3.3-1.12.jar</li>
-                            <li>llibrary-1.7.19-1.12.2.jar</li>
-                            <li>mcjtylib-1.12-3.5.4.jar</li>
-                            <li>obfuscate-0.2.6-1.12.2.jar</li>
-                            <li>reauth-3.6.0.jar</li>
-                            <li>zerocore-1.12.2-0.1.2.8.jar</li>
-                        </ol>
                     </b-col>
                 </b-row>
             </b-container>
@@ -220,8 +97,13 @@
             el: '#app',
             router,
             data: {
-                name: ''
+                code: ''
             },
+            method: {
+                upload: function (event) {
+                    console.log(this.code);
+                }
+            }
             computed: {
                 showAlert() {
                     return this.name.length > 4 ? true : false
