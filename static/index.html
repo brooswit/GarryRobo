@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-    <title>FantasticFuture</title>
+    <title>GarryRobo</title>
 
     <!-- Required Stylesheets -->
     <link
@@ -37,7 +37,7 @@
     <!-- Our application root element -->
     <div id="app">
         <b-navbar toggleable="lg" type="dark" variant="info">
-            <b-navbar-brand href="#">FantasticFuture</b-navbar-brand>
+            <b-navbar-brand href="#">GarryRobo</b-navbar-brand>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -47,15 +47,15 @@
 
                 <!-- Right aligned nav items -->
                 <b-navbar-nav class="ml-auto">
-                    <b-nav-item to="/">Getting Started</b-nav-item>
-                    <b-nav-item to="/guides">Guides</b-nav-item>
+                    <b-nav-item to="/">Upload</b-nav-item>
+                    <b-nav-item to="/guides">Help</b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
         <b-container>
             <b-jumbotron
-                header="FantasticFuture"
-                lead="A difficult but fair cooperative adventure modpack & survival server with a fantastical post-technological theme"
+                header="GarryRobo"
+                lead="A game where you code bots that play garrysmod gamemodes, I guess?"
             >
             </b-jumbotron>
         </b-container>
@@ -64,7 +64,7 @@
 
     <!-- Start running your app -->
     <script>
-        const gettingStartedComponent = { template: `<div>
+        const uploadPageTemplate = { template: `<div>
             <b-container fluid="xl">
                 <b-row>
                     <b-col>
@@ -112,7 +112,7 @@
                 </b-row>
             </b-container>
         </div>` };
-        const guidesComponent = { template: `<div>
+        const helpPageTemplate = { template: `<div>
             <b-container fluid="xl">
                 <b-row>
                     <b-col>
@@ -246,8 +246,8 @@
         </div>` };
 
         const routes = [
-            { path: '/', component: gettingStartedComponent },
-            { path: '/guides', component: guidesComponent }
+            { path: '/', component: uploadPageTemplate },
+            { path: '/guides', component: helpPageTemplate }
         ];
 
         const router = new VueRouter({
